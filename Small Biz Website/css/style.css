@@ -64,3 +64,54 @@ nav ul li a:hover{
 .active{
     background-color:darkgoldenrod;
 }
+
+footer{
+    width:100%;
+    background-color:beige;
+    color:saddlebrown;
+    text-align:center;
+    padding:20px 0;
+}
+
+.keepOpen{
+    clear:both;
+}
+
+/* index.html */
+img#home_img{
+    width:400px;
+    display:block;
+    margin:15px;
+    border:10px inset green;
+    float:left;
+}
+
+h2#h2-home{
+    float:left
+}
+
+p#p-home{
+    float:left;
+    width:56%;
+    
+}
+
+/* about.html */
+img#about_img{
+    width:200px;
+    display:block;
+    margin:15px;
+    border:10px inset green;
+    float:left;
+}
+
+h2#h2-about{
+    float:none;
+}
+
+p#p-about{
+    float:left;
+    width:56%;
+    
+}
+
