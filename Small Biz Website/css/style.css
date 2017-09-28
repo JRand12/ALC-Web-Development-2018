@@ -15,6 +15,9 @@ div#container{
 }
 
 header{
+    background-image:url(../images/row_pumpkins.jpg);
+    background-position: center;
+    background-size:1100px;
     background-color:beige;
     width:100%;
     height:150px;
@@ -25,8 +28,11 @@ header h1{
     text-align:center;
     padding-top:50px;
     color:darkgreen;
-    text-shadow:1px 1px 1px orange;
+    text-shadow:2px 2px 2px orange;
     margin:0;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:35px;
+    
 }
 
 nav{
@@ -88,11 +94,16 @@ img#home_img{
 
 h2#h2-home{
     float:left
+    margin-top:10px;
+    margin-bottom:0;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 p#p-home{
     float:left;
     width:56%;
+    margin-top:10px;
+    font-family: 'Gloria Hallelujah', cursive;
     
 }
 
@@ -101,17 +112,24 @@ img#about_img{
     width:200px;
     display:block;
     margin:15px;
-    border:10px inset green;
+    border:5px outset green;
     float:left;
 }
 
 h2#h2-about{
     float:none;
+    margin-top:10px;
+    margin-bottom:0;
+    
 }
 
 p#p-about{
     float:left;
     width:56%;
+    margin-top:10px;
+    font-family: 'Gloria Hallelujah', cursive;
     
 }
+
+/* produce.html */
 
