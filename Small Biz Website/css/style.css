@@ -28,7 +28,7 @@ header h1{
     text-align:center;
     padding-top:50px;
     color:darkgreen;
-    text-shadow:2px 2px 2px orange;
+    text-shadow:3px 3px 3px black;
     margin:0;
     font-family: 'Gloria Hallelujah', cursive;
     font-size:35px;
@@ -40,6 +40,10 @@ nav{
     background-color:burlywood;
     clear:both;
     margin:0;
+    font-family:cursive;
+    font-size;14px;
+    box-shadow:2px 2px 2px black;
+    
     
 }
 
@@ -48,6 +52,8 @@ nav ul{
     padding:0;
     overflow:hidden;
     list-style:none;
+    font-family:sans-serif;
+    font-size:14px;
 }
 
 nav ul li{
@@ -120,6 +126,7 @@ h2#h2-about{
     float:none;
     margin-top:10px;
     margin-bottom:0;
+    font-family: 'Gloria Hallelujah', cursive;
     
 }
 
@@ -132,4 +139,33 @@ p#p-about{
 }
 
 /* produce.html */
+
+div#gallery{
+    width:100%;
+    border:3px dotted green;
+}
+
+figure{
+    width:250px;
+    float:left;
+    background-color:rgba(255, 255, 204, 0.58);
+    box-shadow:2px 2px 15px black;
+    background: -moz-linear-gradient(#c11d1d, #e0a114); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#000000, #d88a0b); /* Standard syntax */
+}
+
+figure img{
+    display:block;
+    width:200px;
+    height:175px;
+    margin:15px auto;
+    border:1px solid #c4891d;
+}
+
+figcaption{
+    text-align:center;
+    padding:10px 0;
+    font-family:cursive;
+    font-size:14px;
+}
 
