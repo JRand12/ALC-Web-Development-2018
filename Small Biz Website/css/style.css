@@ -140,10 +140,18 @@ p#p-about{
 
 /* produce.html */
 
+h2#h2-products{
+    float:left;
+    margin-top:10px;
+    margin-bottom:0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
 div#gallery{
     width:100%;
-    border:3px dotted green;
+    border:3px dotted brown;
 }
+
 
 figure{
     width:250px;
@@ -151,7 +159,7 @@ figure{
     background-color:rgba(255, 255, 204, 0.58);
     box-shadow:2px 2px 15px black;
     background: -moz-linear-gradient(#c11d1d, #e0a114); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#000000, #d88a0b); /* Standard syntax */
+  background: linear-gradient(#000000,#c10303,#ff9e00); /* Standard syntax */
 }
 
 figure img{
@@ -164,8 +172,11 @@ figure img{
 
 figcaption{
     text-align:center;
+    color:darkgreen;
+    text-shadow:1px 1px 1px black;
     padding:10px 0;
     font-family:cursive;
     font-size:14px;
+    
 }
 
