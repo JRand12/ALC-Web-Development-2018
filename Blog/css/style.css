@@ -1,0 +1,34 @@
+/* Style for Jace's blog website */
+
+/* Reset */
+html,body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li 
+i{
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal Style */
+
+/* Element */
+body{
+    background-color:#000;
+}
+
+/* ID */
+#container{
+    background-color:beige;
+    width:300px;
+}
+
+/* Class */
+.red{
+    color:red;
+}
+
+h1{
+    color: brown;
+}
+
+p{
+    color:darkblue;
+}
