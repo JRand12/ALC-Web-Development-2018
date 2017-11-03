@@ -1,34 +1,49 @@
 /* Style for Jace's blog website */
 
 /* Reset */
-html,body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li 
-i{
+html,body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li{
     margin: 0;
     padding: 0;
 }
 
 /* Universal Style */
 
-/* Element */
 body{
-    background-color:#000;
+    background-color: darkgray;
 }
 
-/* ID */
-#container{
-    background-color:beige;
-    width:300px;
+div#container{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width:100%;
+    background-color:#ff1515;
 }
 
-/* Class */
-.red{
-    color:red;
+header#blogheader{
+    width:100%;
+    height:300px;
+    font-family:sans-serif;
+    text-align:center;
+    background-color:#5d5959;
 }
 
-h1{
-    color: brown;
+/* Blog Post */
+div#blog-post{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    margin:15px 0;
+    padding:10px;
+    background-color:cornflowerblue;
+    box-shadow: 3px 3px 3px #000000;
 }
-
-p{
-    color:darkblue;
+img#post-img{
+    display: block;
+    margin:5px;
+    width:150px;
+    height:150px;
+    background-color: aliceblue;
+    
 }
