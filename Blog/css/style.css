@@ -9,7 +9,7 @@ html,body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li{
 /* Universal Style */
 
 body{
-    background-color: darkgray;
+    background-color:red;
 }
 
 div#container{
@@ -17,7 +17,7 @@ div#container{
     flex-direction: column;
     margin:auto;
     width:100%;
-    background-color:#836503;
+    background-color:#000;
 }
 
 header#blog-head{
@@ -27,9 +27,9 @@ header#blog-head{
     height:300px;
     font-family:Harry p;
     text-align:center;
-    background-color:#5d5959;
+    background-color:red;
     font-size:1.4em;
-    color:#d4d409;
+    color:#FFD700;
 }
 header h1{
     
@@ -43,8 +43,8 @@ div#blog-post{
     width:100%;
     margin:15px 0;
     padding:10px;
-    background-color:cornflowerblue;
-    box-shadow: 3px 3px 3px #000000;
+    background-color:#FFD700;
+    box-shadow: 4px 4px 4px black;
 }
 img#post-img{
     align-self:flex-start;
@@ -52,7 +52,7 @@ img#post-img{
     margin:5px;
     width:150px;
     height:150px;
-    background-color: aliceblue;
+    background-color:#FFD700;
 }
 div#post-body{
     display:flex;
