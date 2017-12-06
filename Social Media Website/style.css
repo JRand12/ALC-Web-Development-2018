@@ -38,9 +38,41 @@ header img#profile_img{
     border-radius:100%;
     background-color:black;
     align-self:flex-end;
+    margin-left:16px;
+}
+
+header div#profile_info{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-self:flex-end;
+    margin-left:32px;
+}
+
+div#profile_info h2{
+    width:100%;
+    order:1;
+    font-size:3em;
+}
+
+div#profile_info h4{
+    width:100%;
+    order:2;
+    font-size:1.2em;
 }
 
 nav{
-    
+  width:25%;
+  order:1;  
+}
+
+div#content{
+  width:75%;
+  order:2;
+}
+
+footer{
+    width:100%;
+    order:3;
 }
 
