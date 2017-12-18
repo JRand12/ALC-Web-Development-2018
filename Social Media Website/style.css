@@ -14,7 +14,7 @@ body{
 div#container{
     display:flex;
     flex-flow:column;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
     background-color:gold;
     max-width:1024px;
@@ -71,13 +71,13 @@ nav ul{
     list-style:none;
 }
 
-nave li{
+nav li{
     
 }
 
-nave li a{
+nav li a{
     text-decoration:none;
-    font-family:sans-serif;
+    font-family:harry p;
     color:black;
 }
 
