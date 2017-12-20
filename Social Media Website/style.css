@@ -6,6 +6,10 @@ html, body, div, header, h1, h2, h3, h4, h5, h6, nav, ul, ol, li, p, footer{
     padding:0;
 }
 
+html{
+    min-height: 100%;
+}
+
 body{
     background-color:maroon;
     font-family: harry p;
@@ -27,6 +31,10 @@ header{
     flex-direction:row;
     justify-content:flex-start;
     background-color:gold;
+    background-image:url("/media/images/hogwarts.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover contain;
     width:100%;
     height:300px
 }
@@ -38,7 +46,7 @@ header img#profile_img{
     border-radius:100%;
     background-color:black;
     align-self:flex-end;
-    margin-left:16px;
+    margin-left:8px 16px;
 }
 
 header div#profile_info{
@@ -82,7 +90,12 @@ nav li a{
 }
 
 div#content{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  flex-flow:column;
   width:75%;
+  height:auto;
   order:2;
 }
 
@@ -91,8 +104,8 @@ div#content div.post{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:flex-start;
-    margin:8px auto;
-    width:85%;
+    margin:6px auto;
+    width:100%;
     height:auto;
     background-color:gold;
     box-shadow: 3px 3px 3px black;
@@ -129,6 +142,11 @@ div#content div.post div.post-info p.time-stamp{
     color:maroon;
     
 }
+div#content div.post p.post-body{
+    order:3;
+    margin:6px 0;
+}
+
 div#content div.post div.post-foot{
     display:flex;
     order:3;
@@ -145,7 +163,10 @@ div#content div.post div.post-foot h5.p-likes{
 }
 
 footer{
+   order:3;
     width:100%;
-    order:3;
+    text-align:center;
+    color:#000;
+    
 }
 
