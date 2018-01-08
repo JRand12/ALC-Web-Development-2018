@@ -68,7 +68,7 @@ div#profile_info h4{
     order:2;
     font-size:1.2em;
 }
-
+/* Navigation Start */
 nav{
   width:10%;
   margin: 10px 0 0 90px;
@@ -88,6 +88,11 @@ nav li a{
     font-family:harry p;
     color:black;
 }
+
+nav li a:hover{
+    color:aqua;
+}
+/* Navigation End */
 
 div#content{
   display:flex;
@@ -156,10 +161,12 @@ div#content div.post div.post-foot{
 
 div#content div.post div.post-foot h5.p-comments{
     order:1;
+    margin:6px;
 }
 
 div#content div.post div.post-foot h5.p-likes{
     order:2;
+    margin:6px;
 }
 
 footer{
@@ -167,6 +174,7 @@ footer{
     width:100%;
     text-align:center;
     color:#000;
+    margin:12px;
     
 }
 
