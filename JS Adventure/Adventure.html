@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adventure Game</title>
+    </head>
+    <body>
+        <h1>Adventure Game v0.1</h1>
+        <p>By: Jace Randolph</p>
+        <script>
+            Start();
+            
+            function Start(){
+                var playerName = prompt("What is your name master?", "Obi-Wan");
+                alert("Welcome to Mustafar,"+ playerName);
+                var beginAdv = confirm("Are you ready to fight Anakin?");
+                
+                if(beginAdv){
+                    Mustafar();
+                }
+                else{
+                   alert("You were my brother Anakin, I loved you!") 
+                }
+            }
+            
+            function Mustafar(){
+                var mustafar = prompt("You arrive at the landing pad on Mustafar, to confront Anakin and kill him. But Anakin spots you and begins to force choke padme.").toLowerCase();
+                
+                if(mustafar == "anakin" || mustafar == "go to anakin"){
+                    alert("Anakin ignites his lightsaber and backflips towards you!")
+                }
+            else if(mustafar == "hallway" || mustafar == "go to hallway"){     alert("You block anakin's strike and start to backup towards the hallway inside.");
+                Mustafar();
+            }
+            else if(mustafar == "control room" || mustafar == "go to control room"){
+                alert("You and anakin ")
+                Mustafar();
+            }
+            else if(mustafar == "outside the control room" || mustafar == "go outside the control room"){
+                
+                YBR();
+            }
+            else{
+                alert("I don't understand" + mustafar);
+                Mustafar();
+            }
+        }
+            function YBR(){
+                var ybr = prompt("Anakin seems to be beating you but your defense is to good for him. You begin to get closer to lava.").toLowerCase();
+              
+                if(ybr == "talk" || ybr == "talk with anakin"){
+                    alert("Anakin says, I should've known the Jedi were plotting to take over, and you reply with, Anakin Chancellor Palpatine is evil anakin says from my point of view the Jedi are evil, you reply with, then you are lost!")
+                    
+                    var anakin = prompt("Ankain says this is the end for you my master! And lunges over you to try and kill you!")
+                    
+                    switch(scarecrow){
+                        case "yell":
+                            alert("Anakin, cries out, 'I hate you!'")
+                        break;
+                        case "climbs":
+                            alert("Anakin's eyes start to turn yellow and red because he has been consumed by the dark side of the force. He also starts to burn.")
+                        break;
+                        default:
+                            alert("You were my brother Anakin, I loved you!")
+                    }
+                }
+            }
+            
+                                                                                    
+                                                                                           
+        </script>
+    </body>
+</html>
