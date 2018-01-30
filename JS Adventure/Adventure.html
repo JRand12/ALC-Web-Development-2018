@@ -5,12 +5,36 @@
     </head>
     <body>
         <h1>Anakin V.S. Obi-Wan Game v0.1</h1>
+        <img src="media/images/Mustafar.png">
         <p>By: Jace Randolph</p>
         <script>
             Start();
             
+            var inventory = {
+                lightsaber:0,
+                bucketoflava:0,
+                blaster:0,
+            }
+            
+            var player = {
+                firstname:"Obi-Wan",
+                lastname:"Kenobi",
+                gender:"Male",
+                age:"38",
+                health:100,
+            }
+            
+            var anakin = {
+                description:"My old friend and apprentice who has turned to the dark side",
+                firstname:"Anakin",
+                lastname:"Skywalker",
+                gender:"male",
+                age:"23",
+                health:10,
+            }
+            
             function Start(){
-                var playerName = prompt("What is your name master?", "Obi-Wan");
+                var playerName = prompt("What is your name master?", "Obi-Wan Kenobi");
                 alert("Welcome to Mustafar,"+ playerName);
                 var beginAdv = confirm("Are you ready to fight Anakin?");
                 
@@ -27,15 +51,26 @@
                 
                 if(mustafar == "anakin" || mustafar == "go to anakin"){
                     alert("Anakin ignites his lightsaber and backflips towards you!")
-                } 
+                }
+                else if(mustafar == "ship" || mustafar == "stay on ship"){
+                    alert("Anakin kills Padme and you have failed!")
+                }
+                else if(mustafar == "yoda" || mustafar == "go to yoda"){
+                    alert("You leave mustafar and go to yoda, but anakin becomes darth vader and is more powerful than ever before. So you have failed.")
+                }
                 
-            function Hallway(){
-                var hallway = prompt("You block Anakin's strike where will you go now?").tolowerCase();
+                if(hallway == "hallway" || hallway == "go to hallway"){
+                
+                    var hallway = prompt("You block Anakin's strike where will you go now?").toLowerCase();
+                    
+                    
             }
-                if(hallway == "hallway" || hallway == "go to hallway"){     alert("You block anakin's strike and start to backup towards the hallway inside.");
-                Hallway();
+                
+            
+
+                                                                       
             function controlroom(){
-                var controlroom = prompt("")
+                var controlroom = prompt("").toLowerCase();
             }
                 }
                 else if(mustafar == "control room" || mustafar == "go to control room"){
