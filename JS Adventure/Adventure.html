@@ -2,13 +2,17 @@
 <html lang="en">
     <head>
         <title>Adventure Game</title>
+        <style>
+            body{
+                background-image: url("media/images/avo.jpg");
+            }
+        </style>
     </head>
     <body>
-        <h1>Anakin V.S. Obi-Wan Game v0.1</h1>
-        <img src="media/images/Mustafar.png">
+        <h1>Anakin V.S. Obi-Wan Game</h1>
         <p>By: Jace Randolph</p>
         <script>
-            Start();
+            
             
             var inventory = {
                 lightsaber:0,
@@ -22,95 +26,106 @@
                 gender:"Male",
                 age:"38",
                 health:100,
+                score:0,                
             }
             
             var anakin = {
                 description:"My old friend and apprentice who has turned to the dark side",
-                firstname:"Anakin",
-                lastname:"Skywalker",
-                gender:"male",
-                age:"23",
-                health:10,
+                damage:10,
+                health:30,
             }
             
+            Start();
+            
             function Start(){
-                var playerName = prompt("What is your name master?", "Obi-Wan Kenobi");
-                alert("Welcome to Mustafar,"+ playerName);
+               player.firstname = prompt("What is your first name Master?");
+               player.lastname = prompt("What is your last name Master?");
+               player.gender = prompt("Gender?");
+               player.age = prompt("how old are you?");    
+                
+                alert("Welcome to the land of OZ, "+ player.firstname + " "+ player.lastname +"\n"+ player.age);
                 var beginAdv = confirm("Are you ready to fight Anakin?");
                 
                 if(beginAdv){
-                    Mustafar();
+                    Village();
                 }
                 else{
-                   alert("You were my brother Anakin, I loved you!") 
+                    alert("You have no guts!!! Good day Sir! or Ma'am");
+                }
+                
+            }
+            
+            function Village(){
+                var village = prompt("You arrive at munchkin village. There are little people about their business. You see a blacksmith, inn, candyshop and the yellow brick road.").toLowerCase();
+                
+                if(village == "blacksmith" || village == "go to blacksmith"){
+                    
+                    var blacksmith = prompt("The little bearded blacksmith gives you a crusty look and says what can I do for you? \np -Buy Sword").toLowerCase();
+                    
+                    if(blacksmith == "buy sword" && inventory.coins == 100){
+                        inventory.coins = inventory.coins - 100;
+                        inventory.sword = 1;
+                        alert("You've bought a sword! \n Swords = " + inventory.sword + "\n Coins = " + inventory.coins);
+                    }
+                    else{
+                        Alert("You do not have enough moola! Go away!");
+                    }
+                    Village(); 
+                    
+                    
+                }
+                else if(village == "inn" || village == "go to inn"){
+                    alert("you enter the inn and the innkeeper says 'What can I do for you? A room, food, a sit by the hearth fire?");
+                    Village();
+                }
+                else if(village =="candyshop" || village == "go to candyshop"){
+                    alert("There is a sign attached to the door that says 'Out to lunch, will be back at sometime");
+                    Village();
+                }
+                else if(village == "yellow brick road" || village == "take yellow brick road"){
+                    
+                    YBR();
+                    
+                }
+                else{
+                    alert("I dont undestand " + village);
+                    Village();
                 }
             }
             
-            function Mustafar(){
-                var mustafar = prompt("You arrive at the landing pad on Mustafar, to confront Anakin and kill him. But Anakin spots you and begins to force choke padme.").toLowerCase();
-                
-                if(mustafar == "anakin" || mustafar == "go to anakin"){
-                    alert("Anakin ignites his lightsaber and backflips towards you!")
-                }
-                else if(mustafar == "ship" || mustafar == "stay on ship"){
-                    alert("Anakin kills Padme and you have failed!")
-                }
-                else if(mustafar == "yoda" || mustafar == "go to yoda"){
-                    alert("You leave mustafar and go to yoda, but anakin becomes darth vader and is more powerful than ever before. So you have failed.")
-                }
-                
-                if(hallway == "hallway" || hallway == "go to hallway"){
-                
-                    var hallway = prompt("You block Anakin's strike where will you go now?").toLowerCase();
-                    
-                    
-            }
-                
-            
-
-                                                                       
-            function controlroom(){
-                var controlroom = prompt("").toLowerCase();
-            }
-                }
-                else if(mustafar == "control room" || mustafar == "go to control room"){
-                alert("You and anakin fight each other intensly. You both drop your lightsabers, and start to fight in hand to hand combat. You use the force to get your lightsaber, and try to strike anakin, but anakin gets his lightsaber and blocks your move.")
-                Mustafar();
-                 
-                }
-                else if(mustafar == "outside the control room" || mustafar == "go outside the control room"){
-                alert("Anakin tries to strike you several times but you block all of his moves. You both jump on to a thin platform and you both try to keep your balance. You both jump off land on a platform, and dramatically lock arms while lava explodes in the background.")
-                
-                YBR();
-            }
-                else{
-                alert("I don't understand" + mustafar);
-                Mustafar();
-            }
-        }
             function YBR(){
-                var ybr = prompt("Anakin seems to be beating you but your defense is to good for him. You begin to get closer to lava.").toLowerCase();
-              
-                if(ybr == "talk" || ybr == "talk with anakin"){
-                    alert("Anakin says, 'I should've known the Jedi were plotting to take over', and you reply with, 'Anakin Chancellor Palpatine is evil,' anakin says, 'from my point of view the Jedi are evil,' you reply with, 'well then you are lost!'")
+                var ybr = prompt("You begin to follow the yellow brick road it goes on for a mile or so before you reach the countryside and notice a Scarecrow beside a corn field. The Scarecrow has a very sad look on his face. Do you stop to talk or move on?").toLowerCase();
+                
+                if(ybr == "talk" || ybr == "talk with scarecrow"){
+                    alert("The scarecrow moves suddenly as if startled. He looks around to see who is talk to him.");
                     
-                var anakin = prompt("Ankain says, 'this is the end for you my master!' and lunges over you to try and kill you!")
+                    var scarecrow = prompt("He doesn't seem to notice you down below. He is hung upon a a stake ten feet up in the air. How will you get his attendion, yell or throw rocks");
                     
-                switch(scarecrow){
-                case "yell":
-                    alert("Anakin, cries out, 'I hate you!'")
-                break;
-                case "climbs":
-                    alert("Anakin's eyes start to turn yellow and red because he has been consumed by the dark side of the force. He also starts to burn.")
-                break;
-                default:
-                    alert("You were my brother Anakin! I loved you!")
+                    switch(scarecrow){
+                        case "yell":
+                            alert("The scarecow, cries out ' who's yelling at me.' You say down here Mr. Scarecrow! He looks down and says 'Oh, I didn't see you there");
+                        break;
+                        case "throw rocks":
+                            alert("The scarecrow wakes alarmed and scared. 'Hey who did that' mumbles the scarecrow. You wave to get his attention. He says ' how rude! Who throws rocks at a sleeping person!?'");
+                        break;
+                        default:
+                            alert("I can't do that!");
+                            
+                            YBR();
+                            
                     }
                 }
             }
             
-                                                                                    
-                                                                                           
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </script>
     </body>
 </html>
