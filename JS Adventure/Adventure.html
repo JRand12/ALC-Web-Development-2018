@@ -31,7 +31,10 @@
             
             var anakin = {
                 description:"My old friend and apprentice who has turned to the dark side",
-                damage:10,
+                firstname:"Anakin",
+                lastname:"Skywalker",
+                gender:"male",
+                age:"23",
                 health:30,
             }
             
@@ -43,55 +46,38 @@
                player.gender = prompt("Gender?");
                player.age = prompt("how old are you?");    
                 
-                alert("Welcome to the land of OZ, "+ player.firstname + " "+ player.lastname +"\n"+ player.age);
+                alert("Welcome to Mustafar, "+ player.firstname + " "+ player.lastname +"\n"+ player.age);
                 var beginAdv = confirm("Are you ready to fight Anakin?");
                 
                 if(beginAdv){
-                    Village();
+                    Mustafar();
                 }
                 else{
-                    alert("You have no guts!!! Good day Sir! or Ma'am");
+                    alert("You have arrived to mustafar.");
                 }
                 
             }
             
-            function Village(){
-                var village = prompt("You arrive at munchkin village. There are little people about their business. You see a blacksmith, inn, candyshop and the yellow brick road.").toLowerCase();
+            function Mustafar(){
+                var mustafar = prompt("You arrive at the landing pad on Mustafar, to confront Anakin and kill him. But Anakin spots you and begins to force choke padme.").toLowerCase();
                 
-                if(village == "blacksmith" || village == "go to blacksmith"){
+                if(mustafar == "anakin" || mustafar == "go to anakin"){
                     
-                    var blacksmith = prompt("The little bearded blacksmith gives you a crusty look and says what can I do for you? \np -Buy Sword").toLowerCase();
-                    
-                    if(blacksmith == "buy sword" && inventory.coins == 100){
-                        inventory.coins = inventory.coins - 100;
-                        inventory.sword = 1;
-                        alert("You've bought a sword! \n Swords = " + inventory.sword + "\n Coins = " + inventory.coins);
-                    }
-                    else{
-                        Alert("You do not have enough moola! Go away!");
-                    }
-                    Village(); 
-                    
-                    
+                    var anakin = prompt("Anakin ignites his lightsaber and backflips towards you!").toLowerCase(); 
                 }
-                else if(village == "inn" || village == "go to inn"){
-                    alert("you enter the inn and the innkeeper says 'What can I do for you? A room, food, a sit by the hearth fire?");
-                    Village();
-                }
-                else if(village =="candyshop" || village == "go to candyshop"){
-                    alert("There is a sign attached to the door that says 'Out to lunch, will be back at sometime");
-                    Village();
-                }
-                else if(village == "yellow brick road" || village == "take yellow brick road"){
+            function Controlroom(){
+                var controlroom = prompt("You and Anakin both enter the controlroom and continue to fight.").toLowerCase();
+                
+                if(controlroom == "lightsaber" || controlroom == "swing lightsaber")
                     
-                    YBR();
-                    
-                }
-                else{
-                    alert("I dont undestand " + village);
-                    Village();
-                }
+                    var lightsaber = prompt("Your lightsaber hits Anakin's and they both make sparks.").toLowerCase();
             }
+                    
+                   
+                    
+                }
+                
+            
             
             function YBR(){
                 var ybr = prompt("You begin to follow the yellow brick road it goes on for a mile or so before you reach the countryside and notice a Scarecrow beside a corn field. The Scarecrow has a very sad look on his face. Do you stop to talk or move on?").toLowerCase();
