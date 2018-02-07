@@ -62,9 +62,14 @@
                 var mustafar = prompt("You arrive at the landing pad on Mustafar, to confront Anakin and kill him. But Anakin spots you and begins to force choke padme.").toLowerCase();
                 
                 if(mustafar == "anakin" || mustafar == "go to anakin"){
-                    
-                    var anakin = prompt("Anakin ignites his lightsaber and backflips towards you!").toLowerCase(); 
                 }
+            }
+            function Anakin(){
+                var anakin = prompt("Anakin ignites his lightsaber and backflips towards you!").toLowerCase(); 
+            
+                if(anakin == "controlroom" || anakin == "go to controlroom"){
+                }
+            }
             function Controlroom(){
                 var controlroom = prompt("You and Anakin both enter the controlroom and continue to fight.").toLowerCase();
                 
@@ -72,43 +77,30 @@
                     
                     var lightsaber = prompt("Your lightsaber hits Anakin's and they both make sparks.").toLowerCase();
             }
-                    
-                   
-                    
-                }
-                
-            
             
             function YBR(){
-                var ybr = prompt("You begin to follow the yellow brick road it goes on for a mile or so before you reach the countryside and notice a Scarecrow beside a corn field. The Scarecrow has a very sad look on his face. Do you stop to talk or move on?").toLowerCase();
+                var ybr = prompt("Anakin seems to be beating you but your defense is to good for him. You begin to get closer to lava.").toLowerCase();
                 
-                if(ybr == "talk" || ybr == "talk with scarecrow"){
-                    alert("The scarecrow moves suddenly as if startled. He looks around to see who is talk to him.");
+                if(ybr == "talk" || ybr == "talk with anakin"){
+                    alert("Anakin says, 'I should've known the Jedi were plotting to take over', and you reply with, 'Anakin Chancellor Palpatine is evil,' anakin says, 'from my point of view the Jedi are evil,' you reply with, 'well then you are lost!'");
                     
-                    var scarecrow = prompt("He doesn't seem to notice you down below. He is hung upon a a stake ten feet up in the air. How will you get his attendion, yell or throw rocks");
+                    var scarecrow = prompt("Ankain says, 'this is the end for you my master!' and lunges over you to try and kill you!");
                     
-                    switch(scarecrow){
+                    switch(anakin){
                         case "yell":
-                            alert("The scarecow, cries out ' who's yelling at me.' You say down here Mr. Scarecrow! He looks down and says 'Oh, I didn't see you there");
+                            alert("Anakin, cries out, 'I hate you!'");
                         break;
-                        case "throw rocks":
-                            alert("The scarecrow wakes alarmed and scared. 'Hey who did that' mumbles the scarecrow. You wave to get his attention. He says ' how rude! Who throws rocks at a sleeping person!?'");
+                        case "climbs":
+                            alert("Anakin's eyes start to turn yellow and red because he has been consumed by the dark side of the force. He also starts to burn.");
                         break;
                         default:
-                            alert("I can't do that!");
+                            alert("You were my brother Anakin! I loved you!");
                             
                             YBR();
                             
                     }
                 }
             }
-            
-            
-            
-            
-            
-            
-            
             
             
             
