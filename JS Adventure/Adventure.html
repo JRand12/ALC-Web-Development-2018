@@ -16,8 +16,7 @@
             
             var inventory = {
                 lightsaber:0,
-                bucketoflava:0,
-                blaster:0,
+                highground:0,
             }
             
             var player = {
@@ -63,27 +62,47 @@
                 
                 if(mustafar == "anakin" || mustafar == "go to anakin"){
                     alert("You and Anakin begin to argue about why he has turned to the dark side.");
+                    
+                else if(mustafar == "ship" || mustafar == "go to ship"){
+                    alert("You go back to the ship and padme lives and Anakin still becomes Darth Vader");
+                    
+                else if(mustafar == "coruscant" || mustafar == "go to coruscant" ){
+                    alert("You go back to coruscant and anakin doesn't get barbecued and becomes Darth Vader.");
+                }
+            }
             
             var anakin = prompt("Anakin ignites his lightsaber and backflips towards you!").toLowerCase(); 
-                
-                
+                    
+                    if(anakin == "lightsaber" || anakin == "ignite lightsaber"){
+                    
+           var lightsaber = prompt("You ignite your lightsaber and block anakin's strike!")
+           
+                    if(lightsaber == "controlroom" || lightsaber == "go to controlroom"){
+                        alert("You and Anakin start to fight intensly and move towards the controlroom");
+                }
             }
-            function Controlroom(){
+        }
                 var controlroom = prompt("You and Anakin both enter the controlroom and continue to fight.").toLowerCase();
                 
                 if(controlroom == "lightsaber" || controlroom == "swing lightsaber"){
                     
-                    var lightsaber = prompt("Your lightsaber hits Anakin's and they both make sparks.").toLowerCase();
+                    var lightsaber = prompt("Your lightsaber hits Anakin's lightsaber and they both make sparks.").toLowerCase();
+                    
+                    if(lightsaber == "anakin" || lightsaber == "look at anakin"){
+                        
+                    }
             }
         }
-    }
-            function YBR(){
                 var ybr = prompt("Anakin seems to be beating you but your defense is to good for him. You begin to get closer to lava.").toLowerCase();
                 
                 if(ybr == "talk" || ybr == "talk with anakin"){
                     alert("Anakin says, 'I should've known the Jedi were plotting to take over', and you reply with, 'Anakin Chancellor Palpatine is evil,' anakin says, 'from my point of view the Jedi are evil,' you reply with, 'well then you are lost!'");
                     
-                    var scarecrow = prompt("Ankain says, 'this is the end for you my master!' and lunges over you to try and kill you!");
+                    var anakin = prompt("Ankain says, 'this is the end for you my master!' and lunges over you to try and kill you!");
+                    
+                    if(anakin == "highground" || anakin == "highground"){
+                        alert("You chop anakin's limbs off because you had the highground");
+                    }
                     
                     switch(anakin){
                         case "yell":
@@ -99,7 +118,7 @@
                             
                     }
                 }
-            }
+            
             
             
             
