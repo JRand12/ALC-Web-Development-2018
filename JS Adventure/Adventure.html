@@ -48,22 +48,20 @@
             function Mustafar(){
                 var mustafar = prompt("You arrive at the landing pad on Mustafar, to confront Anakin and kill him. But Anakin spots you and begins to force choke padme.").toLowerCase();
                 
-                if(mustafar == "go to door" || mustafar == "door" ||mustafar == "go to the door"){
-                    alert("You slowly open the door.");
+                if(mustafar == "go to anakin" || mustafar == "anakin" ||mustafar == "go to anakin"){
+                    alert("You go to Anakin, You both argue about why he has turned to the dark side.");
                     Controlroom();
                 }
-                else if(mustafar == "open door" || mustafar == "open the door"){
+                else if(mustafar == "ship" || mustafar == "go to ship"){
+                    alert("You return to the ship and go into hiding for 20 years and Anakin becomes more powerful than ever with padme.")
                     Mustafar();
                 }
-                else if(mustafar == "scarf" || mustafar == "grab scarf" || mustafar == "use scarf"){
-                    alert("You grab the scarf and wrap it around the cut on your arm to stop the bleeding.");
+                else if(mustafar == "coruscant" || mustafar == "coruscant" || mustafar == "go to coruscant"){
+                    alert("You go back to Coruscant and are killed by clones.");
                     Mustafar();
                 }
-                else if(mustafar == "open window" || mustafar == "open the window"){
-                    alert("You can't open the window, and you can't see out of it, it is dark outside.");
-                    Mustafar();
-                }
-                else if(mustafar == "go to the room" || mustafar == "go to room" || mustafar == "room" || mustafar == "the room"){
+                else if(mustafar == "lava" || mustafar == "jump in lava"){
+                    alert("You jump in the lava and are killed");
                     Mustafar();
                 }
                 else if(mustafar == "inventory"){
@@ -78,15 +76,15 @@
             
             
             function Controlroom(){
-                var controlroom = prompt("You open the door quietly and look out into the dark hallway. It is too dark to see anything to your left. To your right you see a dim light over a door at the end of the hall. Which way do you want to go?").toLowerCase();
+                var controlroom = prompt("Anakin ignites his lightsaber and backflips towards you! You pull your lightsaber out and deflect his move. You both start to move towards the controlroom").toLowerCase();
                 
-                if(controlroom == "go left" || controlroom == "left" || controlroom == "go to the left"){
-                    alert("You go left. You start walking down the dark hallway.");
-                    Controlroom();
+                if(controlroom == "go to controlroom" || controlroom == "controlroom" || controlroom == "go to controlroom"){
+                    alert("You both have fought hard inside the controlroom, but anakin is still pushing back, you both move outside to continue fighting.");
+                    Outside();
                 }
-                else if(controlroom == "go right" || controlroom == "right" || controlroom == "go to the right" || controlroom == "go to light" || controlroom == "right door"){
-                    alert("You go right. You follow the hallway until you reach the light and you see the door. You can hear a ugly sound in the room. You slowly open the door and you see a big angry orc in the room eating a rat. He doesn't see you and you see a sword on the table behind him.");
-                    Controlroom();
+                else if(controlroom == "kill anakin" || controlroom == "strike" || controlroom == "swing" || controlroom == "kill"){
+                    alert("You kill Anakin and the galaxy is safe from darth vader.");
+                    Outside();
                 }
                 else if(controlroom == "inventory"){
                     alert(inventory);
@@ -99,31 +97,22 @@
             }
             
              function Outside(){
-                var outside = prompt("Will you brave up and kill him with the sword, or be a coward and walk away?").toLowerCase();
+                var outside = prompt("You both jump on a platform below and lock arms together while lava dramatically shoots up in the background.").toLowerCase();
                 
-                if(outside == "kill" || outside == "kill orc with sword" || outside == "sword" || outside == "kill him" || outside == "be brave" || outside == "brave up" || outside == "sword" || outside == "kill the orc"){
-                    alert("You sneakily go and grab the sword behind the orc. Right before you raise the sword above his head to kill it you see another orc walking into the room with a sword. He sees you. you quickly kill the orc eating the rat and you are now in a duel with the other orc.");
-                    Duel();
+                if(outside == "run" || outside == "run to pillar" || outside == "lightsaber" || outside == "jump on pillar" || outside == "go to pillar" || outside == "pillar" || outside == "go to pillar" || outside == "climb pillar"){
+                    alert("You and Anakin climb the tall Pillar. The Pillar falls into a river of lava and starts moving down the river . You jump of just in time before it falls of a lavafall. Anakin also barely makes it and jumps onto a floating robot.");
+                    Pillar();
                 }
                 
-                 if(outside == "open door" ||outside == "exit door" || outside == "exit" ||outside == "right door" || outside == "go right"){
-                    alert("The go to open the exit door.");
+                 if(outside == "kill" ||outside == "kill anakin"){
+                    alert("You kill anakin and Darth Vader never becomes a threat to the galaxy.");
                     Outside();
                  }
-                else if(outside == "keep walking" || outside == "don't go in" || outside == "dont go in" || outside == "don't go" || outside == "dont go" || outside == "don't go in room"){
+                else if(outside == "leave" || outside == "leave mustafar" ){
                     Outside();
                     
                 }
-                else if(outside == "inventory"){
-                    alert(inventory);
-                    Outside();
-                }
-                else if(outside == "dark room" || outside == "go to dark room"){
-                    Outside();
-                }
-                else if(outside == "hallway" || outside == "go to hallway"){
-                    Outside();
-                }
+            
                 else{
                     alert("I don't understand '"+outside+"'");
                   Outside();
@@ -132,77 +121,66 @@
             
            
             function Pillar(){
-                var pillar = prompt("You make your way down the dark hallway. At the end of the hallway you find a door that is cracked open. To your right there is another door with an exit sign above it.").toLowerCase();
+                var pillar = prompt("You stand on a floating platform while Anakin stands on the floating robot and you try to strike him, he blocks your move, and vise versa. Anakin says, 'I should've known the Jedi were plotting to take over.' You reply with, 'Anakin Chancellor Palpatine is evil.' He says,'From my point of view the Jedi are evil!' You yell,'Then you are lost!'").toLowerCase();
                 
-                if(pillar == "go in room" || pillar  == "go in the room" || leftroom == "go into the room" || leftroom == "go into room" || leftroom == "go in" || leftroom == "go inside room" || leftroom == "go inside the room" || leftroom == "go inside"){
-                    alert("You push the door open and go inside the room.");
-                    BedRoom();
+                if(pillar == "stay" || pillar  == "fight anakin" || pillar == "stay on platform" || pillar == "platform"){
+                    alert("Anakin frontflips over you and tries to kill you but you defend his move.");
+                    Platform();
                 }
                 
-                 if(rightroom == "open door" || leftroom == "exit door" || leftroom == "exit" || leftroom == "right door" || leftroom == "go right"){
-                    alert("The go to open the exit door.");
-                    ExitDoor();
+                 if(pillar == "jar jar" || pillar == "darth jar jar"){
+                    alert("Since you killed anakin Jar Jar binks becomes the new apprentice to darth sideous");
+                    Pillar();
                  }
-                else if(leftroom == "keep walking" || leftroom == "don't go in" || leftroom == "dont go in" || leftroom == "don't go" || leftroom == "dont go" || leftroom == "don't go in room"){
-                    LeftHallway();
+                else if(pillar == "mustafar" || pillar == "mustafar blows up"){
+                    alert("Mustafar blows up and you and Anakin both die.")
+                    Pillar();
                     
                 }
-                else if(leftroom == "inventory"){
-                    alert(inventory);
-                    LeftRoom();
-                }
-                else if(leftroom == "dark room" || leftroom == "go to dark room"){
-                    DarkRoom();
-                }
-                else if(leftroom == "hallway" || leftroom == "go to hallway"){
-                    LeftHallway();
-                }
-                else{
-                    alert("I don't understand '"+leftroom+"'");
-                    LeftRoom();
-                }
+                
             }
             
             
             
-            function ExitDoor(){
-            var exitdoor = prompt("The exit door is locked and needs a key to be opened").toLowerCase();
+            function Platform(){
+            var platform = prompt("You and Anakin both hit your lightsabers at the same time and both push against each other.").toLowerCase();
             
-            if(exitdoor == "use key" || exitdoor == "key" || exitdoor == "I have a key" || exitdoor == "go through"){
-                KeyholeDoor();
+            if(platform == "jump" || platform == "highground" || platform == "go to highground"){
+                alert("You jump off the platform onto the highground")
+               Highground();
             }
-            else if(leftHallway == "go to the room" || leftHallway == "go to room" || leftHallway == "room" || leftHallway == "the room"){
-                    BedRoom();
-            }
-            else if(leftHallway == "dark room" || leftHallway == "go to dark room" || leftHallway == "go to the dark room" || leftHallway == "the dark room"){
-                    DarkRoom();
+            else if(platform == "exile" || platform == "go into exile"){
+                    Platform();
             }
             else{
-                    alert("I don't understand '"+leftHallway+"'");
-                    LeftHallway();
+                    alert("I don't understand '"+platform+"'");
+                    Platform();
             }
             }
            
-            function BedRoom(){
-                var bedroom = prompt("In the room you see an open window").toLowerCase();
+            function Highground(){
+                var highground = prompt("You say, 'It's over Anakin I have the highground, he says, 'You underestimate my power' You say, 'Don't try it! And Anakin frontflips over you for like the third time.").toLowerCase();
                 
-                if(bedroom == "go to window" || bedroom == "window"){
-                    alert("You go to the window and look out of it. there is a balcony and 15 ft below are emergency stairs. You cannot jump to it or you will fall off the 50 ft drop to the ground.");
-                    Nightstand();
+                if(highground == "swing" || highground == "kill anakin"){
+                    alert("You swing your lightsaber and chop all of Anakin's limbs off, half of him stumbles down the hill close to the lava. You say, 'You were the chosen one, it said you were supposed to destroy the sith not join them, bring balance to the force not leave it in darkness.' Anakin yells,'I HATE YOU!! you respond with, 'You were my brother Anakin I loved you! You watch him barbecue and then grab his lightsaber and leave. And it is the end of the game, OR IS IT? 'Star Wars Music starts playing' ");
+                    Highground();
                 }
-                else if(bedroom == "inventory"){
+                else if(highground == "inventory"){
                     alert(inventory);
-                    BedRoom();
+                   Highground();
                 }
-                else if(bedroom == "dark room" || bedroom == "go to dark room" || bedroom == "go to the dark room" || bedroom == "the dark room"){
-                    DarkRoom();
+                else if(highground == "lava" || highground == "get hit by lava" ){
+                    Highground();
                 }
                 else{
-                    alert("I don't understand '"+bedroom+"'");
-                    BedRoom();
+                    alert("I don't understand '"+highground+"'");
+                    Highground();
                 }
             }
             
+            function End(){
+                alert("You won \nGame Over");
+            }
           
             
         </script>
