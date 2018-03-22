@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    background-color:white;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    z-index:50;
-    padding-bottom:50px;
+  background-color: white;
+	font-family: 'Roboto', sans-serif;
+  position: relative;
+  z-index: 50;
+  padding-bottom: 50px;
 }
 
 .main {
-    border-radius:3px;
+    border-radius: 3px;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
+    width:50%;
     height: 300;
     text-align: left;
-    background-color: #313131;
+    background-color: #1a1a1a;
     margin: auto;
     box-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .main input[type="radio"] {
-    display:none;
+    display: none;
 }
 
 .main input[type="radio"] + .box {
@@ -35,20 +35,18 @@ body {
 
 .main input[type="radio"]:hover + .box {
     transition: all .4s ease-out;
-    border-radius:13px%;
+    border-radius: 13px;
 }
 
 .main input[type="radio"]:checked + .box {
-    transition: ease a;; 0.4s;
-    border-radius: 100%;
+    transition: ease all 0.4s
 }
 
-.main .box {
+.main .box{
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    /* see if this works */
-    will-change: transition;
+    will-change: ransition;
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -56,14 +54,14 @@ body {
 
 .main .hue {
     height: 20px;
-    width: 20px;
-    display: inline-block;
-    position:relative;
-    text-align:center;
-    font-size: 8.7px;
-    line-height: 30px;
-    padding: 0;
-    color: white;
+	width: 20px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-size: 8.7px;
+	line-height: 30px;
+	padding: 0;
+	color: white;
 }
 
 .main .color {
@@ -72,22 +70,22 @@ body {
     display: inline-block;
     position: relative;
     text-align: center;
-    align-content:center;
+    align-content: center;
     font-size: 14px;
     color: white;
-    margin:0;
+    margin: 0;
 }
 
 .main .fill {
     height: 50px;
     width: 50px;
     display: inline-block;
-    position:relative;
-    text-align: center;
-    font-size: 14px;
-    padding: 0;
-    color: white;
-    margin: 0;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	padding: 0;
+	color: white;
+	margin: 0;
 }
 
 .filler {
@@ -98,117 +96,120 @@ body {
     height: 175px;
     width: 175px;
     margin-top: 20px;
-    background-color: #313131;
+    background-color: #1a1a1a;
     margin-bottom: 20px;
-    border-radius:20px;
+    border-radius: 20px;
     border: 2px solid black;
 }
 
 .previews {
-    grid-column: 2 / 3;
+	grid-column: 2 / 3;
 }
 
 .modal {
-    display:none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    background-color: rgba(0,0,0,0.4);
-    overflow:auto;
-    z-index:1;
-    transition: all .4s ease-out;
+  display: grid;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility linear 0.5s, opacity 0.5s linear;
+  transition-delay: 0.1s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+  z-index: 1;
+  transition: all .4s ease-out;
 }
 
 .mdls {
-    padding-top:50ps;
-    width: 50%;
-    margin: auto;
-    z-index: 999;
-    position: relative;
+  padding-top: 50px;
+  width: 50%;
+  margin: auto;
+  z-index: 999;
+  position: relative;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
 }
 
 .center {
-    display: flex;
-    flex-direction:column;
-    grid-column: 2 / 3;
+  display: flex;
+  flex-direcion: column;
+  grid-column: 2 / 3;
 }
 
 .right {
-    display: flex;
-    flex-direction: column;
-    grid-column: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  grid-column: 3 / 4;
 }
 
 .btn {
-    margin-right: 5px;
-    border: 1px solid #000000;
-    border-radius: 50px;
-    background-color: transparent;
-    color: rgba(0,0,0,0.87);
-    width:96px;
-    height:48px;
-    outline:none;
-    color: #000000;
-    transition: all .4s ease-out;
+  margin-right: 5px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgba(0,0,0, 0.87);
+  width: 96px;
+  height: 48px;
+  outline: none;
+  color: #000000;
+  transition: all .4s ease-out;
 }
 
 .btn:hover {
-    background-color: #000000;
-    color:white;
-    transition: all .4s ease-out;
+  background-color: #000000;
+  color: white;
+  transition: all .4s ease-out;
 }
 
 .btn:active {
-    outline: none;
+  outline: none;
 }
 
 .btn2 {
-    margin-right: 10px;
-    border: 1px solid #2979ff;
-    border-radius: 50px;
-    background-color: transparent;
-    color: rgba(0,0,0,0.87);
-    width:96px;
-    height:48px;
-    outline:none;
-    color:#2979ff;
-    transition: all .4s ease-out;
-    float: right;
+  margin-right: 10px;
+  border: 1px solid #2979FF;
+  border-radius: 50px;
+  background-color: transparent;
+  color: rgba(0,0,0, 0.87);
+  width: 96px;
+  height: 48px;
+  outline: none;
+  color: #2979FF;
+  transition: all .4s ease-out;
+  float: right;
 }
 
 .btn2:hover {
-    background-color: #2979ff;
-    color: white;
-    transition: all .4s ease-out;
+  background-color: #2979FF;
+  color: white;
+  transition: all .4s ease-out;
 }
 
 .btn2:active {
-    outline: none;
+  outline: none;
 }
 
-.red500 {background-color: #f44336;}
+.red500 {background-color: #ff1100;}
 
-.orange500 {background-color: #ff9800;}
+.orange500 {background-color: #ffa218;}
 
-.yellow500 {background-color: #ffeb00;}
+.yellow500 {background-color: #fff06d;}
 
-.green500 {background-color: #53bf45;}
+.green500 {background-color: #33e23a;}
 
-.blue500 {background-color: #63b7ff;}
+.blue500 {background-color: #5db7ff;}
 
-.indigo500 {background-color: #664adb;}
+.indigo500 {background-color: #3853e6;}
 
-.violet500 {background-color: #9244c3;}
+.purple500 {background-color: #e23aff;}
 
-.white500 {background-color: #ffffff;}
+.white {background-color: #FFFFFF;}
 
-.gray500 {background-color: #cbcbcb;}
-
+.grey500 {background-color: #aaaaaa;}
