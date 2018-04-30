@@ -162,7 +162,7 @@ figure{
     background-color:rgba(255, 255, 204, 0.58);
     box-shadow:2px 2px 15px black;
     background: -moz-linear-gradient(#ff0000, #bbcef8); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#eb0000,#3866ff,#ffffff); /* Standard syntax */
+  background: linear-gradient(#900000,#062898,#d9d9d9); /* Standard syntax */
 }
 
 figure img{
