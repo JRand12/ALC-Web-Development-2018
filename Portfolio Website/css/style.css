@@ -87,8 +87,8 @@ footer{
     clear:both;
 }
 
-/* index.html */
-img#home_img{
+/* skills.html */
+img#skills_img{
     width:400px;
     display:block;
     margin:15px;
@@ -101,6 +101,7 @@ h2#h2-home{
     margin-top:10px;
     margin-bottom:0;
     font-family: 'Gloria Hallelujah', cursive;
+    color: white;
 }
 
 p#p-home{
