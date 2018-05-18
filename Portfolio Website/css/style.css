@@ -197,11 +197,14 @@ h2#h2-contact{
     margin-left:10px;
     clear:both;
     float:left;
-    
+    color:white;
+    text-shadow:4px 4px 4px black;
 }
 
 form#form-contact{
     margin-left:10px;
+    color:white;
+    text-shadow:4px 4px 4px black;
 }
 
 form input{
@@ -216,12 +219,7 @@ button#button-contact{
     box-shadow:1px 1px 2px #000;
 }
 
-div#map{
-    float:right;
-    margin-right:30px;
-    margin-top:0;
-}
 
-div#map h2{
-    margin-top:0;
-}
+
+
+
